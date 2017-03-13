@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		    <title>VR Demo</title>
+		    <meta charset="utf-8">
+		    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+        <script src="https://rawgit.com/ngokevin/aframe-layout-component/master/dist/aframe-layout-component.min.js"></script>
+        <!-- Drop in another component and use it from markup. -->
+        <script src="https://rawgit.com/ngokevin/aframe-template-component/master/dist/aframe-template-component.min.js"></script>
+      </head>
+      <body>
+<a-scene>
+  <a-assets>
+    <img id="enemy-sprite" crossorigin="" src="data:image/jpeg;base64,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">
+
+     <img id="enemy-sprite-2" crossorigin="" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvhu3qljUGO_UKn9tL6eq440zYZtweAUCGfBQKeeqidQjAQQiMuA">
+
+    <img id="skyTexture" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossorigin="anonymous">
+
+    <!-- Template component lets us use Handlebars, Jade, Mustache, Nunjucks. -->
+    <script id="enemies" type="text/x-nunjucks-template">
+      <a-entity layout="type: circle; radius: 5" position="0 0.5 0">
+        <!-- Use A-Frames declarative animation system to have enemies march around us. -->
+        <a-animation attribute="rotation" dur="30000" easing="linear" repeat="indefinite" to="0 360 0"></a-animation>
+
+        {% for x in range(num) %}
+        <a-image look-at="#player" src="#enemy-sprite" transparent="true"></a-image>
+        {% endfor %}
+      </a-entity>
+    </script>
+  </a-assets>
+
+   <script id="enemies-2" type="text/x-nunjucks-template">
+      <a-entity layout="type: circle; radius: 5" position="0 1.2 0">
+        <!-- Use A-Frames declarative animation system to have enemies march around us. -->
+        <a-animation attribute="rotation" dur="10000" easing="linear" repeat="indefinite" to="0 360 0"></a-animation>
+
+        {% for x in range(num) %}
+        <a-image look-at="#player" src="#enemy-sprite-2" transparent="true"></a-image>
+        {% endfor %}
+      </a-entity>
+    </script>
+  </a-assets>
+
+  <!-- Behold, the power of components. -->
+  <a-entity template="src: #enemies" data-num="10"></a-entity>
+
+<a-entity template="src: #enemies-2" data-num="10"></a-entity>
+
+  <a-camera id="player" position="0 1.8 0"></a-camera>
+
+  <a-sky color="#252243" src="#skyTexture"></a-sky>
+</a-scene>
+
+</body>
+</html>
